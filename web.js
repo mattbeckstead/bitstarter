@@ -1,18 +1,15 @@
 var express = require('express');
-var buf = require('buffer');
 var fs = require('fs');
 var app = express();
+var inputFile = 'index.html';
 
-var outputString = "Error: value of outputString was never set.";
-
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/public'));
 
-outputString = buf.toString(fs.readFileSync("index.html"));
-
+var output = fs.readFileSync(inputFile, 'utf-8');
 
 app.get('/', function(request, response) {
-  response.send(outputString);
+  response.send(output);
 });
 
 app.listen(app.get('port'), function() {
