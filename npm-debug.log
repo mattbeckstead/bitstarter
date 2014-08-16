@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'fs' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose node symlink /usr/bin/node
+5 warn package.json buffer@2.5.0 buffer is also the name of a node core module.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'fs', null ]
+8 verbose cache add name=undefined spec="fs" args=["fs",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'fs',
+9 verbose parsed url   path: 'fs',
+9 verbose parsed url   href: 'fs' }
+10 silly lockFile 3f4bb586-fs fs
+11 verbose lock fs /home/ubuntu/.npm/3f4bb586-fs.lock
+12 silly lockFile 3f4bb586-fs fs
+13 silly lockFile 3f4bb586-fs fs
+14 verbose addNamed [ 'fs', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile a107b96b-fs fs@
+17 verbose lock fs@ /home/ubuntu/.npm/a107b96b-fs.lock
+18 silly addNameRange { name: 'fs', range: '*', hasData: false }
+19 verbose request where is /fs
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 7e0b335751e3bc67
+22 verbose url raw /fs
+23 verbose url resolving [ 'https://registry.npmjs.org/', './fs' ]
+24 verbose url resolved https://registry.npmjs.org/fs
+25 verbose request where is https://registry.npmjs.org/fs
+26 info trying registry request attempt 1 at 23:08:43
+27 http GET https://registry.npmjs.org/fs
+28 http 404 https://registry.npmjs.org/fs
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Sat, 09 Aug 2014 23:08:43 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     etag: '"5BQZWWEVHQEXWCPP0V3B1TODR"',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '397',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-sjc3125-SJC',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1407625723.800678,VS0,VE150',
+29 silly registry.get     vary: 'Accept',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly lockFile a107b96b-fs fs@
+31 silly lockFile a107b96b-fs fs@
+32 error 404 Not Found
+32 error 404
+32 error 404 'fs' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'node-js-sample'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Linux 3.13.0-29-generic
+34 error command "/usr/bin/node" "/usr/bin/npm" "install" "fs"
+35 error cwd /home/ubuntu/dev/startup-eng/bitstarter
+36 error node -v v0.10.30
+37 error npm -v 1.4.21
+38 error code E404
+39 verbose exit [ 1, true ]
